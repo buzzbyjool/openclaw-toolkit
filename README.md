@@ -116,18 +116,22 @@ See [docs/exec-guardian-deep-dive.md](docs/exec-guardian-deep-dive.md) for the f
 
 ---
 
-## Our deployment
+## Who we are
 
-These tools are extracted from a real production deployment of OpenClaw at Easylab AI. We document the full architecture, security layers, and lessons learned on our site:
+**[Easylab AI](https://easylab.ai)** is a Luxembourg-based company building AI-powered tools for business operations. We run an autonomous OpenClaw agent in production -- handling emails, calendars, infrastructure monitoring, client projects, and inter-agent communication -- 24/7, with no manual intervention on routine tasks.
 
-**[openclaw.easylab.ai](https://openclaw.easylab.ai)** -- Case study, security architecture, behavioral scoring dashboard, and more.
+These tools are extracted from that deployment. We built them because the default security model wasn't enough for real business use: we needed graduated exec policies, human-in-the-loop approval for sensitive commands, and full audit trails on everything the agent does.
+
+We document the full architecture, the 12 security layers, the incidents we've had, and the behavioral scoring system on our dedicated site:
+
+**[openclaw.easylab.ai](https://openclaw.easylab.ai)** -- Case study, security architecture, behavioral trust scoring, and more.
 
 ---
 
 ## License
 
-[CC BY-NC-SA 4.0](LICENSE) -- Attribution to [Easylab AI](https://openclaw.easylab.ai) required. Non-commercial use only.
+[CC BY-NC-SA 4.0](LICENSE) -- Attribution to [Easylab AI](https://easylab.ai) required. Non-commercial use only.
 
 ---
 
-Built by [Easylab AI](https://openclaw.easylab.ai) (Luxembourg).
+Built by [Easylab AI](https://easylab.ai) -- [easylab.ai](https://easylab.ai) | [openclaw.easylab.ai](https://openclaw.easylab.ai) -- Luxembourg.
