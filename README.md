@@ -116,6 +116,14 @@ See [docs/exec-guardian-deep-dive.md](docs/exec-guardian-deep-dive.md) for the f
 
 ---
 
+## Our deployment
+
+These tools are extracted from a real production deployment of OpenClaw at Easylab AI. We document the full architecture, security layers, and lessons learned on our site:
+
+**[openclaw.easylab.ai](https://openclaw.easylab.ai)** -- Case study, security architecture, behavioral scoring dashboard, and more.
+
+---
+
 ## License
 
 [CC BY-NC-SA 4.0](LICENSE) -- Attribution to [Easylab AI](https://openclaw.easylab.ai) required. Non-commercial use only.
