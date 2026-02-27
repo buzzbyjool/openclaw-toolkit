@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.openclaw.bridge-incoming-logger</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/path/to/your/home/.openclaw/bridge/bridge-incoming-logger.py</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>60</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/path/to/your/home/.openclaw/bridge/logs/incoming-logger.log</string>
+  <key>StandardErrorPath</key>
+  <string>/path/to/your/home/.openclaw/bridge/logs/incoming-logger.log</string>
+</dict>
+</plist>

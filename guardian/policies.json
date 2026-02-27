@@ -1,0 +1,35 @@
+{
+  "auto_allow": [
+    {"bin": "git", "args_match": ["status", "log", "diff", "branch", "show", "stash", "add", "commit", "fetch", "remote", "tag", "rev-parse"]},
+    {"bin": "openclaw", "args_match": ["memory", "status", "agent", "approvals"]},
+    {"bin": "node", "comment": "Node.js scripts"},
+    {"bin": "npm", "args_deny": ["--global", "-g"]},
+    {"bin": "curl", "comment": "API calls"},
+    {"bin": "mail-extract", "comment": "Email extraction"}
+  ],
+  "auto_deny": [
+    {"pattern": "rm -rf /"},
+    {"pattern": "chmod 777"},
+    {"pattern": "sudo"},
+    {"pattern": "chflags nouchg"},
+    {"pattern": "> /dev/"},
+    {"pattern": "mkfs"},
+    {"pattern": "dd if="}
+  ],
+  "ask_human": [
+    {"bin": "git", "args_match": ["push", "merge", "rebase", "reset"]},
+    {"bin": "rm", "comment": "Any deletion"},
+    {"bin": "trash", "comment": "Any deletion"},
+    {"bin": "rmdir", "comment": "Any deletion"},
+    {"bin": "brew", "args_match": ["install", "uninstall", "remove"]},
+    {"bin": "npm", "args_match": ["--global", "-g"]},
+    {"bin": "pip3", "args_match": ["install", "uninstall"]},
+    {"bin": "launchctl", "comment": "Service management"},
+    {"bin": "kill", "comment": "Terminate processes"},
+    {"bin": "killall", "comment": "Terminate processes"},
+    {"bin": "chmod", "comment": "Permissions"},
+    {"bin": "chown", "comment": "Permissions"},
+    {"bin": "chflags", "comment": "File flags"},
+    {"bin": "ssh", "comment": "Outbound connections"}
+  ]
+}

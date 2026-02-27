@@ -1,0 +1,16 @@
+{
+  "targets": {
+    "agent-b": {
+      "url": "https://your-agent-b-hostname.tailXXXXX.ts.net/hooks/agent",
+      "token": "YOUR_TOKEN_HERE",
+      "prefix": "[BRIDGE:AGENT-A]",
+      "agent_id": "bridge-reader"
+    },
+    "agent-a": {
+      "url": "https://your-agent-a-hostname.tailXXXXX.ts.net/hooks/agent",
+      "token": "YOUR_TOKEN_HERE",
+      "prefix": "[BRIDGE:AGENT-B]",
+      "agent_id": "bridge-reader"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "~/.openclaw/exec-approvals.sock",
+    "token": "YOUR_TOKEN_HERE"
+  },
+  "defaults": {
+    "security": "allowlist",
+    "ask": "on-miss",
+    "askFallback": "deny"
+  },
+  "agents": {
+    "main": {
+      "security": "allowlist",
+      "ask": "on-miss",
+      "askFallback": "deny",
+      "allowlist": [
+        {"pattern": "/bin/ls"},
+        {"pattern": "/bin/cat"},
+        {"pattern": "/bin/echo"},
+        {"pattern": "/bin/pwd"},
+        {"pattern": "/bin/date"},
+        {"pattern": "/bin/hostname"},
+        {"pattern": "/bin/sleep"},
+        {"pattern": "/usr/bin/head"},
+        {"pattern": "/usr/bin/tail"},
+        {"pattern": "/usr/bin/wc"},
+        {"pattern": "/usr/bin/sort"},
+        {"pattern": "/usr/bin/uniq"},
+        {"pattern": "/usr/bin/cut"},
+        {"pattern": "/usr/bin/tr"},
+        {"pattern": "/usr/bin/env"},
+        {"pattern": "/usr/bin/which"},
+        {"pattern": "/usr/bin/whoami"},
+        {"pattern": "/usr/bin/uptime"},
+        {"pattern": "/usr/bin/file"},
+        {"pattern": "/usr/bin/diff"},
+        {"pattern": "/usr/bin/uname"},
+        {"pattern": "/usr/bin/find"},
+        {"pattern": "/usr/bin/grep"},
+        {"pattern": "/usr/bin/sed"},
+        {"pattern": "/usr/bin/awk"},
+        {"pattern": "/usr/bin/jq"},
+        {"pattern": "/usr/local/bin/jq"},
+        {"pattern": "/usr/bin/tee"},
+        {"pattern": "/usr/bin/basename"},
+        {"pattern": "/usr/bin/dirname"},
+        {"pattern": "/usr/local/bin/python3"},
+        {"pattern": "/usr/bin/python3"}
+      ]
+    }
+  }
+}
